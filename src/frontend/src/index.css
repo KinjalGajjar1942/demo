@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Figtree:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 1rem;
+    --primary: 0.55 0.18 5;
+    --primary-foreground: 0.99 0 0;
+    --accent: 0.82 0.17 85;
+    --accent-foreground: 0.28 0.07 20;
+    --background: 0.96 0.025 85;
+    --foreground: 0.45 0.04 20;
+    --card: 0.94 0.018 20;
+    --card-foreground: 0.28 0.07 20;
+    --popover: 0.94 0.018 20;
+    --popover-foreground: 0.28 0.07 20;
+    --secondary: 0.92 0.01 85;
+    --secondary-foreground: 0.28 0.07 20;
+    --muted: 0.92 0.01 85;
+    --muted-foreground: 0.55 0.03 20;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.88 0.02 20;
+    --input: 0.88 0.02 20;
+    --ring: 0.55 0.18 5;
+    --chart-1: 0.55 0.18 5;
+    --chart-2: 0.82 0.17 85;
+    --chart-3: 0.68 0.16 5;
+    --chart-4: 0.75 0.13 40;
+    --chart-5: 0.9 0.1 95;
+    --sidebar: 0.96 0.025 85;
+    --sidebar-foreground: 0.28 0.07 20;
+    --sidebar-primary: 0.55 0.18 5;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.94 0.018 20;
+    --sidebar-accent-foreground: 0.28 0.07 20;
+    --sidebar-border: 0.88 0.02 20;
+    --sidebar-ring: 0.55 0.18 5;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Figtree", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Fraunces", serif;
+    color: oklch(0.28 0.07 20);
+  }
+}
+
+.hero-headline {
+  -webkit-text-stroke: 3px oklch(0.55 0.18 5);
+  paint-order: stroke fill;
+  font-family: "Fraunces", serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: oklch(0.96 0.025 85);
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(0.55 0.18 5 / 0.4);
+  border-radius: 3px;
+}
